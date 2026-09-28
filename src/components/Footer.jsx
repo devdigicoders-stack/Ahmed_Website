@@ -195,9 +195,9 @@ export default function Footer() {
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#E8D5B0]/70">
           <p>{t.footer.rights}</p>
           <div className="flex items-center gap-4">
-            <Link to="/about" className="hover:text-white transition-colors">{t.footer.privacyPolicy}</Link>
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">{t.footer.privacyPolicy}</Link>
             <span>•</span>
-            <Link to="/about" className="hover:text-white transition-colors">{t.footer.termsConditions}</Link>
+            <Link to="/terms-conditions" className="hover:text-white transition-colors">{t.footer.termsConditions}</Link>
             <span>•</span>
             <a 
               href={import.meta.env.VITE_ADMIN_PORTAL_URL || 'http://localhost:5174'} 

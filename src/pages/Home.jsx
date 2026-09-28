@@ -250,40 +250,43 @@ export default function Home() {
 
                 {/* Imagery Grid for Philosophy */}
                 <div className="grid grid-cols-3 gap-3 pt-2">
-                  <div className="rounded-2xl overflow-hidden h-24 sm:h-28 border border-[#E5DBCE] shadow-sm relative group">
-                    <img
-                      src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop&q=80"
+                  <div className="rounded-2xl overflow-hidden h-28 sm:h-32 border border-[#E5DBCE] shadow-sm relative group">
+                    <SafeImage
+                      src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=85"
                       alt="Qatari Villa Living"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full"
+                      imgClassName="group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-2">
-                      <span className="text-[10px] font-bold text-white leading-tight">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-2.5 pointer-events-none z-10">
+                      <span className="text-[11px] font-bold text-white leading-tight drop-shadow-sm">
                         {lang === 'en' ? 'Private Villas' : 'فلل ومنازل خاصة'}
                       </span>
                     </div>
                   </div>
 
-                  <div className="rounded-2xl overflow-hidden h-24 sm:h-28 border border-[#E5DBCE] shadow-sm relative group">
-                    <img
-                      src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=500&auto=format&fit=crop&q=80"
+                  <div className="rounded-2xl overflow-hidden h-28 sm:h-32 border border-[#E5DBCE] shadow-sm relative group">
+                    <SafeImage
+                      src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&auto=format&fit=crop&q=85"
                       alt="Gourmet Kitchen Service"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full"
+                      imgClassName="group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-2">
-                      <span className="text-[10px] font-bold text-white leading-tight">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-2.5 pointer-events-none z-10">
+                      <span className="text-[11px] font-bold text-white leading-tight drop-shadow-sm">
                         {lang === 'en' ? 'Kitchen & Meals' : 'طهي عائلي فاخر'}
                       </span>
                     </div>
                   </div>
 
-                  <div className="rounded-2xl overflow-hidden h-24 sm:h-28 border border-[#E5DBCE] shadow-sm relative group">
-                    <img
-                      src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=500&auto=format&fit=crop&q=80"
+                  <div className="rounded-2xl overflow-hidden h-28 sm:h-32 border border-[#E5DBCE] shadow-sm relative group">
+                    <SafeImage
+                      src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&auto=format&fit=crop&q=85"
                       alt="Compassionate Care"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full"
+                      imgClassName="group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-2">
-                      <span className="text-[10px] font-bold text-white leading-tight">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-2.5 pointer-events-none z-10">
+                      <span className="text-[11px] font-bold text-white leading-tight drop-shadow-sm">
                         {lang === 'en' ? 'Family Care' : 'رعاية واهتمام'}
                       </span>
                     </div>

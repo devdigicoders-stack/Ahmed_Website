@@ -90,22 +90,26 @@ export default function Contact() {
             {/* Form Column (7 Cols) */}
             <div className="lg:col-span-7 bg-white p-8 sm:p-12 rounded-3xl border border-[#E5DBCE] shadow-xl">
               {isSubmitted ? (
-                <div className="p-8 text-center space-y-4 animate-in zoom-in-95 duration-300">
-                  <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto">
-                    <CheckCircle2 size={36} />
+                <div className="py-6 px-4 sm:px-6 text-center space-y-4 animate-in zoom-in-95 duration-300">
+                  <div className="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center mx-auto shadow-sm">
+                    <CheckCircle2 size={30} />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#380C1B]">
-                    {t.contact.successTitle}
-                  </h3>
-                  <p className="text-sm text-[#524848] max-w-md mx-auto">
-                    {t.contact.successMsg}
-                  </p>
-                  <button
-                    onClick={() => setIsSubmitted(false)}
-                    className="px-6 py-2.5 rounded-xl bg-[#5B132B] text-white font-semibold text-xs mt-4"
-                  >
-                    {lang === 'en' ? 'Submit Another Request' : 'تقديم طلب آخر'}
-                  </button>
+                  <div className="space-y-1">
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-[#380C1B]">
+                      {t.contact.successTitle}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-[#665E5E] max-w-sm mx-auto leading-relaxed">
+                      {t.contact.successMsg}
+                    </p>
+                  </div>
+                  <div className="pt-2">
+                    <button
+                      onClick={() => setIsSubmitted(false)}
+                      className="px-6 py-2.5 rounded-xl bg-[#5B132B] hover:bg-[#380C1B] text-white font-bold text-xs shadow-md transition-all cursor-pointer"
+                    >
+                      {lang === 'en' ? 'Submit Another Request' : 'تقديم طلب آخر'}
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -280,18 +284,20 @@ export default function Contact() {
             <div className="lg:col-span-5 space-y-6">
               
               {/* Photo Banner */}
-              <div className="rounded-3xl overflow-hidden shadow-md border border-[#E5DBCE] h-44 relative group">
+              <div className="rounded-3xl overflow-hidden shadow-md border border-[#E5DBCE] h-60 relative group bg-[#F5EFE6]">
                 <SafeImage
-                  src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1000&auto=format&fit=crop&q=85"
                   alt="Staffing Consultation Qatar"
-                  className="w-full h-full group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full"
+                  objectPosition="object-center"
+                  imgClassName="group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#380C1B]/85 via-[#380C1B]/30 to-transparent flex items-end p-4 pointer-events-none">
-                  <div>
-                    <span className="text-[10px] font-bold text-[#C5A059] uppercase block tracking-wider">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2B0915]/95 via-[#2B0915]/40 to-transparent flex items-end p-5 pointer-events-none z-10">
+                  <div className="space-y-1.5">
+                    <span className="inline-block px-2.5 py-0.5 rounded-md bg-[#C5A059] text-[#2B0915] text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
                       {lang === 'en' ? 'Quick 2-Hour Response' : 'استجابة سريعة خلال ساعتين'}
                     </span>
-                    <h4 className="text-sm font-bold text-white leading-snug">
+                    <h4 className="text-sm sm:text-base font-bold text-white leading-snug drop-shadow-md">
                       {lang === 'en' ? 'Dedicated Staffing Consultant Assigned to Your Family' : 'مستشار توظيف مخصص لمتابعة متطلبات عائلتك'}
                     </h4>
                   </div>

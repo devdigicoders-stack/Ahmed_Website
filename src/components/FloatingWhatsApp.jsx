@@ -11,9 +11,9 @@ export default function FloatingWhatsApp() {
   const whatsappUrl = `https://wa.me/97455123456?text=${encodeURIComponent(defaultText)}`;
 
   return (
-    <div className={`fixed bottom-6 ${isRTL ? 'left-6' : 'right-6'} z-50 flex items-center group`}>
+    <div className={`hidden md:flex fixed bottom-6 ${isRTL ? 'left-6' : 'right-6'} z-50 items-center group`}>
       {/* Tooltip Label */}
-      <span className={`hidden sm:inline-block ${isRTL ? 'ml-3' : 'mr-3'} px-3.5 py-1.5 bg-[#380C1B] text-white text-xs font-semibold rounded-full shadow-lg border border-[#C5A059]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap`}>
+      <span className={`${isRTL ? 'ml-3' : 'mr-3'} px-3.5 py-1.5 bg-[#380C1B] text-white text-xs font-semibold rounded-full shadow-lg border border-[#C5A059]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap`}>
         {lang === 'en' ? 'Chat on WhatsApp with Us' : 'تواصل معنا مباشرة عبر واتساب'}
       </span>
 

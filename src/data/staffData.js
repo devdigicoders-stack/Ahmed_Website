@@ -21,7 +21,7 @@ export const staffProfiles = [
     reviewsCount: 24,
     skills: ["General Housekeeping", "Wardrobe Organizing", "Laundry Care", "Table Setting"],
     skillsAr: ["التدبير المنزلي", "تنظيم الخزائن والملابس", "العناية بالغسيل", "ترتيب المائدة"],
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop&crop=faces&q=85"
   },
   {
     id: "STF-102",
@@ -45,7 +45,7 @@ export const staffProfiles = [
     reviewsCount: 38,
     skills: ["Machboos & Biryani", "Dietary Nutrition Planning", "Pastry & Sweets", "HACCP Hygiene"],
     skillsAr: ["المجبوس والبرياني والأكلات التراثية", "تخطيط الوجبات الصحية", "الحلويات والمعجنات", "معايير النظافة الغذائية"],
-    image: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&auto=format&fit=crop&crop=faces&q=85"
   },
   {
     id: "STF-103",
@@ -69,7 +69,7 @@ export const staffProfiles = [
     reviewsCount: 42,
     skills: ["Defensive Driving", "Full Qatar GPS Knowledge", "Vehicle Maintenance", "Discretion & Punctuality"],
     skillsAr: ["القيادة الآمنة والوقائية", "معرفة تامة بجميع طرق ومناطق قطر", "صيانة ونظافة المركبة", "الانضباط التام والسرية"],
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&auto=format&fit=crop&crop=faces&q=85"
   },
   {
     id: "STF-104",
@@ -93,7 +93,7 @@ export const staffProfiles = [
     reviewsCount: 31,
     skills: ["Medication Administration", "Vitals & Glucose Monitoring", "Wound Dressing", "Emergency First Aid"],
     skillsAr: ["إعطاء الأدوية بانتظام", "مراقبة الضغط والسكر", "تضميد الجروح", "الإسعافات الأولية للطوارئ"],
-    image: "https://images.unsplash.com/photo-1594824813571-638f0263441f?w=600&auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1594824813571-638f0263441f?w=800&auto=format&fit=crop&crop=faces&q=85"
   },
   {
     id: "STF-105",
@@ -117,7 +117,7 @@ export const staffProfiles = [
     reviewsCount: 19,
     skills: ["Mobility & Wheelchair Assistance", "Daily Bathing & Grooming", "Nutritious Meal Prep", "Recreational Companionship"],
     skillsAr: ["مساعدة الكرسي المتحرك والحركة", "العناية بالنظافة الشخصية", "تجهيز الوجبات المخصصة", "الرفقة والأنشطة الترفيهية"],
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&auto=format&fit=crop&crop=faces&q=85"
   },
   {
     id: "STF-106",
@@ -141,6 +141,6 @@ export const staffProfiles = [
     reviewsCount: 27,
     skills: ["Villa Management", "Steam Pressing & Ironing", "Crystal & Chandelier Care", "Event Cleanup"],
     skillsAr: ["إدارة وتنظيم الفلل الكبيرة", "الكي بالبخار والاعتناء بالملابس", "تنظيف الكريستال والتحف", "ترتيب ما بعد المناسبات"],
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&auto=format&fit=crop&crop=faces&q=85"
   }
 ];

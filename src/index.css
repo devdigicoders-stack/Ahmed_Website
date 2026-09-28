@@ -84,3 +84,25 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #5B132B;
 }
+
+/* Global Image Fitting Standards */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+

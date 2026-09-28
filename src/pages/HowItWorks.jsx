@@ -104,20 +104,35 @@ export default function HowItWorks() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
               {/* Photo Showcase Column */}
               <div className="lg:col-span-5 space-y-4">
-                <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white h-[340px] relative">
-                  <SafeImage
-                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&auto=format&fit=crop&q=80"
-                    alt="Dedicated Support in Qatar"
-                    className="w-full h-full"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#380C1B]/80 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/90 backdrop-blur-md text-[#380C1B]">
-                    <span className="text-[10px] font-bold text-[#5B132B] uppercase block">
-                      {lang === 'en' ? '24/7 Family Assistance' : 'دعم وإشراف مستمر على مدار الساعة'}
-                    </span>
-                    <p className="text-xs font-semibold">
-                      {lang === 'en' ? 'Transparent contracts, vetted backgrounds, and peaceful household management.' : 'عقود واضحة، كوادر مفحوصة، وراحة بال تامة لمنزلك.'}
-                    </p>
+                <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-white h-[420px] relative flex flex-col justify-between">
+                  <div className="relative flex-grow overflow-hidden">
+                    <SafeImage
+                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&auto=format&fit=crop&q=85"
+                      alt="Dedicated Household Staffing Support in Qatar"
+                      className="w-full h-full object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#2B0915]/90 via-[#2B0915]/30 to-transparent pointer-events-none" />
+                    
+                    <div className="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
+                      <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-[#5B132B] text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+                        {lang === 'en' ? 'Qatar Standards' : 'معايير الجودة القطرية'}
+                      </span>
+                      <span className="px-2.5 py-1 rounded-full bg-[#C5A059] text-[#2B0915] text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+                        100% Vetted
+                      </span>
+                    </div>
+
+                    <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md text-[#380C1B] shadow-lg border border-[#E5DBCE]/80" style={{ textAlign: isRTL ? 'right' : 'left' }}>
+                      <span className="text-[10px] font-extrabold text-[#5B132B] uppercase tracking-wider block mb-0.5">
+                        {lang === 'en' ? 'Family Staffing Advisors' : 'مستشارو التوظيف المنزلي المعتمدون'}
+                      </span>
+                      <h4 className="text-sm font-bold text-[#380C1B] leading-snug">
+                        {lang === 'en' ? 'Clear Contracts & Continuous Support' : 'عقود واضحة ومتابعة مستمرة لراحة بالك'}
+                      </h4>
+                      <p className="text-[11px] text-[#665E5E] mt-1 leading-relaxed">
+                        {lang === 'en' ? 'Flexible monthly plans, thoroughly verified personnel, and complete peace of mind for Qatari households.' : 'خطط شهرية مرنة وكوادر موثوقة تلائم خصوصية وتقاليد المجتمع القطري.'}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
