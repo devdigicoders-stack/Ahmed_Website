@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { FaWhatsapp } from 'react-icons/fa';
 import logo from '../assets/Ahmed For Facility Servies Logo.png';
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  ShieldCheck, 
-  Clock, 
-  CheckCircle2, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  ShieldCheck,
+  Clock,
+  CheckCircle2,
   ArrowUpRight,
   HeartHandshake
 } from 'lucide-react';
@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#2B0915] text-[#FAF8F5] pt-16 pb-8 border-t-4 border-[#C5A059]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Top Feature Bar */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pb-12 mb-12 border-b border-white/10">
           <div className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
@@ -68,16 +68,16 @@ export default function Footer() {
 
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
-          
+
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <img src={logo} alt="Ahmed for Facility Services" className="w-10 h-10 object-contain flex-shrink-0" />
+            <div className="flex items-center gap-3.5">
+              <img src={logo} alt="Ahmed for Facility Services" className="w-14 h-14 md:w-16 md:h-16 object-contain flex-shrink-0" />
               <div>
-                <span className="font-bold text-xl text-white block">
+                <span className="font-extrabold text-xl md:text-2xl text-white block tracking-tight">
                   Ahmed for Facility Services
                 </span>
-                <span className="text-[11px] font-semibold text-[#C5A059] uppercase tracking-wider block">
+                <span className="text-[11px] font-bold text-[#C5A059] uppercase tracking-wider block mt-0.5">
                   Facility & Household Staffing • Qatar
                 </span>
               </div>
@@ -198,10 +198,10 @@ export default function Footer() {
             <span>•</span>
             <Link to="/terms-conditions" className="hover:text-white transition-colors">{t.footer.termsConditions}</Link>
             <span>•</span>
-            <a 
-              href={import.meta.env.VITE_ADMIN_PORTAL_URL || 'http://localhost:5174'} 
-              target="_blank" 
-              rel="noreferrer" 
+            <a
+              href={import.meta.env.VITE_ADMIN_PORTAL_URL || 'http://localhost:5174'}
+              target="_blank"
+              rel="noreferrer"
               className="text-[#C5A059] hover:underline transition-colors flex items-center gap-1 font-semibold"
             >
               <ShieldCheck size={13} />

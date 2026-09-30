@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    brandName: "Ahmed Facility Services",
+    brandName: "Ahmed for Facility Services",
     brandTagline: "Premium Home & Family Staffing Services — Qatar",
     positioning: "Trusted People. Professional Service. Peace of Mind.",
     nav: {
@@ -272,7 +272,7 @@ export const translations = {
       }
     },
     footer: {
-      aboutText: "Ahmed Facility Services is Qatar's premier household staffing partner, delivering trusted, vetted, and professional home support tailored for Qatari families.",
+      aboutText: "Ahmed for Facility Services is Qatar's premier household staffing partner, delivering trusted, vetted, and professional home support tailored for Qatari families.",
       servicesTitle: "Our Services",
       quickLinks: "Company",
       legal: "Legal & Compliance",

@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import logo from '../assets/Ahmed For Facility Servies Logo.png';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import { 
-  Phone, 
-  Globe, 
-  Menu, 
-  X, 
-  ChevronDown, 
-  ShieldCheck, 
+import {
+  Phone,
+  Globe,
+  Menu,
+  X,
+  ChevronDown,
+  ShieldCheck,
   Sparkles
 } from 'lucide-react';
 
@@ -36,9 +36,9 @@ export default function Header() {
   const navLinks = [
     { name: t.nav.home, path: '/' },
     { name: t.nav.aboutUs, path: '/about' },
-    { 
-      name: t.nav.services, 
-      path: '/services', 
+    {
+      name: t.nav.services,
+      path: '/services',
       hasDropdown: true,
       subItems: [
         { name: t.services.items.housemaids.title, path: '/services#housemaids' },
@@ -46,7 +46,7 @@ export default function Header() {
         { name: t.services.items.familyDrivers.title, path: '/services#family-drivers' },
         { name: t.services.items.privateNurses.title, path: '/services#private-nurses' },
         { name: t.services.items.caregivers.title, path: '/services#caregivers' },
-      ] 
+      ]
     },
     { name: t.nav.monthlyStaffing, path: '/monthly-staffing' },
     { name: t.nav.ourProfessionals, path: '/our-professionals' },
@@ -65,15 +65,15 @@ export default function Header() {
               <span>QATAR</span>
             </span>
             <span className="opacity-95 font-medium truncate text-[11px] sm:text-xs">
-              {lang === 'en' 
-                ? 'Verified & Dedicated Household Staffing in Doha and across Qatar' 
+              {lang === 'en'
+                ? 'Verified & Dedicated Household Staffing in Doha and across Qatar'
                 : 'كوادر منزلية معتمدة وموثوقة للعائلات في الدوحة وكافة أنحاء قطر'}
             </span>
           </div>
-          
+
           <div className="flex items-center gap-4 text-[11px] flex-shrink-0">
-            <a 
-              href="tel:+97474022250" 
+            <a
+              href="tel:+97474022250"
               className="hover:text-white flex items-center gap-1.5 transition-colors font-semibold"
             >
               <Phone size={12} className="text-[#C5A059]" />
@@ -92,51 +92,49 @@ export default function Header() {
       </div>
 
       {/* Main Navigation Bar */}
-      <div 
-        className={`w-full transition-all duration-300 ${
-          isScrolled 
-            ? 'bg-[#FDFBF7]/95 backdrop-blur-md shadow-md py-2.5' 
-            : 'bg-[#FDFBF7] py-3.5 border-b border-[#EBE5DA]'
-        }`}
+      <div
+        className={`w-full transition-all duration-300 ${isScrolled
+          ? 'bg-[#FDFBF7]/95 backdrop-blur-md shadow-md py-2.5'
+          : 'bg-[#FDFBF7] py-3.5 border-b border-[#EBE5DA]'
+          }`}
       >
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
-          
+
           {/* 1. Left: Brand Logo & Title */}
-          <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0">
+          <Link to="/" className="flex items-center gap-3 sm:gap-3.5 group flex-shrink-0">
             <img
               src={logo}
               alt="Ahmed for Facility Services Logo"
-              className="w-10 h-10 sm:w-11 sm:h-11 object-contain group-hover:scale-105 transition-transform flex-shrink-0"
+              className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain group-hover:scale-105 transition-transform flex-shrink-0"
             />
-            <div className="flex flex-col">
-              <span className="font-extrabold text-base sm:text-lg text-[#380C1B] tracking-tight leading-tight group-hover:text-[#5B132B] transition-colors whitespace-nowrap">
+            <div className="flex flex-col justify-center">
+              <span className="font-black text-base sm:text-lg md:text-xl text-[#380C1B] tracking-tight leading-tight group-hover:text-[#5B132B] transition-colors whitespace-nowrap">
                 Ahmed for Facility Services
               </span>
-              <span className="text-[10px] font-bold tracking-wider text-[#C5A059] uppercase whitespace-nowrap">
+              <span className="text-[10px] sm:text-[11px] font-bold tracking-widest text-[#C5A059] uppercase whitespace-nowrap mt-0.5">
                 Facility Services • Qatar
               </span>
             </div>
           </Link>
 
           {/* 2. Center: Navigation Links */}
-          <nav className="hidden lg:flex items-center justify-center gap-1 xl:gap-2 flex-1 px-2">
+          <nav className="hidden lg:flex items-center justify-center gap-1 xl:gap-2 flex-1 px-4">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
               if (link.hasDropdown) {
                 return (
-                  <div 
-                    key={link.path} 
+                  <div
+                    key={link.path}
                     className="relative group"
                     onMouseEnter={() => setServicesDropdown(true)}
                     onMouseLeave={() => setServicesDropdown(false)}
                   >
                     <Link
                       to={link.path}
-                      className={`flex items-center gap-1 px-3 py-2 rounded-lg text-xs xl:text-[13px] font-bold tracking-tight whitespace-nowrap transition-all ${
-                        isActive || location.pathname.startsWith('/services')
-                          ? 'text-[#5B132B] bg-[#5B132B]/5 font-extrabold'
-                          : 'text-[#4A4040] hover:text-[#5B132B] hover:bg-[#FAF8F5]'
-                      }`}
+                      className={`flex items-center gap-1 px-3 py-2 rounded-lg text-xs xl:text-[13px] font-bold tracking-tight whitespace-nowrap transition-all ${isActive || location.pathname.startsWith('/services')
+                        ? 'text-[#5B132B] bg-[#5B132B]/5 font-extrabold'
+                        : 'text-[#4A4040] hover:text-[#5B132B] hover:bg-[#FAF8F5]'
+                        }`}
                     >
                       <span>{link.name}</span>
                       <ChevronDown size={13} className="group-hover:rotate-180 transition-transform duration-200 text-[#C5A059]" />
@@ -164,11 +162,10 @@ export default function Header() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`px-3 py-2 rounded-lg text-xs xl:text-[13px] font-bold tracking-tight whitespace-nowrap transition-all relative ${
-                    isActive 
-                      ? 'text-[#5B132B] bg-[#5B132B]/5 font-extrabold' 
-                      : 'text-[#4A4040] hover:text-[#5B132B] hover:bg-[#FAF8F5]'
-                  }`}
+                  className={`px-3 py-2 rounded-lg text-[13px] font-bold tracking-tight whitespace-nowrap transition-all relative ${isActive
+                    ? 'text-[#5B132B] bg-[#5B132B]/5 font-extrabold'
+                    : 'text-[#4A4040] hover:text-[#5B132B] hover:bg-[#FAF8F5]'
+                    }`}
                 >
                   {link.name}
                   {isActive && (
@@ -180,28 +177,18 @@ export default function Header() {
           </nav>
 
           {/* 3. Right Action Buttons */}
-          <div className="hidden lg:flex items-center gap-2.5 flex-shrink-0">
-            {/* Language Switch Button */}
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-[#D5C7B3] hover:border-[#5B132B] text-xs font-bold text-[#380C1B] hover:bg-[#FAF8F5] transition-all whitespace-nowrap cursor-pointer shadow-sm"
-              title="Switch Language"
-            >
-              <Globe size={13} className="text-[#C5A059]" />
-              <span>{lang === 'en' ? 'العربية' : 'English'}</span>
-            </button>
-
+          <div className="hidden lg:flex items-center flex-shrink-0">
             {/* Request Staff CTA Button */}
             <Link
               to="/contact"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-[#5B132B] to-[#7E203E] text-white text-xs font-bold shadow-md hover:shadow-lg hover:from-[#380C1B] hover:to-[#5B132B] transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#5B132B] to-[#7E203E] text-white text-xs sm:text-sm font-bold shadow-md hover:shadow-lg hover:from-[#380C1B] hover:to-[#5B132B] transition-all transform hover:-translate-y-0.5 whitespace-nowrap"
             >
               <span>{t.nav.requestStaff}</span>
-              <Sparkles size={13} className="text-[#E8D5B0]" />
+              <Sparkles size={14} className="text-[#E8D5B0]" />
             </Link>
           </div>
 
-          {/* Mobile Menu Trigger & AR Button */}
+          {/* Mobile/Tablet Menu Trigger */}
           <div className="flex items-center gap-2 lg:hidden">
             <button
               onClick={toggleLanguage}
@@ -228,16 +215,15 @@ export default function Header() {
                 key={link.path}
                 to={link.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors ${
-                  location.pathname === link.path
-                    ? 'bg-[#5B132B] text-white'
-                    : 'text-[#380C1B] hover:bg-[#FAF8F5]'
-                }`}
+                className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors ${location.pathname === link.path
+                  ? 'bg-[#5B132B] text-white'
+                  : 'text-[#380C1B] hover:bg-[#FAF8F5]'
+                  }`}
               >
                 {link.name}
               </Link>
             ))}
-            
+
             <div className="pt-3 border-t border-[#EBE5DA]">
               <Link
                 to="/contact"
