@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { FaWhatsapp } from 'react-icons/fa';
+import logo from '../assets/Ahmed For Facility Servies Logo.png';
 import { 
   Phone, 
   Mail, 
@@ -71,12 +72,10 @@ export default function Footer() {
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#C5A059] text-[#380C1B] flex items-center justify-center font-bold text-xl">
-                <span className="font-serif">A</span>
-              </div>
+              <img src={logo} alt="Ahmed for Facility Services" className="w-10 h-10 object-contain flex-shrink-0" />
               <div>
                 <span className="font-bold text-xl text-white block">
-                  {t.brandName}
+                  Ahmed for Facility Services
                 </span>
                 <span className="text-[11px] font-semibold text-[#C5A059] uppercase tracking-wider block">
                   Facility & Household Staffing • Qatar
@@ -91,7 +90,7 @@ export default function Footer() {
             <div className="p-3 rounded-xl bg-white/5 border border-white/10 text-xs text-[#E8D5B0] inline-flex items-center gap-1.5">
               <MapPin size={13} className="text-[#C5A059] flex-shrink-0" />
               <span className="font-semibold text-[#C5A059]">Doha, Qatar: </span>
-              <span>Grand Hamad Street, PO Box 8892</span>
+              <span>4th Flr, HUB Business Center, Royal Plaza Mall, Al Sadd</span>
             </div>
           </div>
 
@@ -170,17 +169,17 @@ export default function Footer() {
               {lang === 'en' ? 'Direct Contact' : 'الاتصال المباشر'}
             </h4>
             <div className="space-y-3 text-xs text-[#E8D5B0]">
-              <a href="tel:+97444556677" className="flex items-center gap-2 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
-                <Phone size={14} className="text-[#C5A059]" />
-                <span>+974 4455 6677</span>
+              <a href="tel:+97474022250" className="flex items-center gap-2 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors min-w-0">
+                <Phone size={14} className="text-[#C5A059] flex-shrink-0" />
+                <span className="truncate">+974 7402 2250</span>
               </a>
-              <a href="https://wa.me/97455123456" target="_blank" rel="noreferrer" className="flex items-center gap-2 p-2 rounded-lg bg-[#25D366]/20 text-[#25D366] hover:bg-[#25D366]/30 transition-colors font-medium">
-                <FaWhatsapp size={15} />
-                <span>+974 5512 3456</span>
+              <a href="https://wa.me/97474022250" target="_blank" rel="noreferrer" className="flex items-center gap-2 p-2 rounded-lg bg-[#25D366]/20 text-[#25D366] hover:bg-[#25D366]/30 transition-colors font-medium min-w-0">
+                <FaWhatsapp size={15} className="flex-shrink-0" />
+                <span className="truncate">+974 7402 2250</span>
               </a>
-              <a href="mailto:info@ahmedfacility.qa" className="flex items-center gap-2 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
-                <Mail size={14} className="text-[#C5A059]" />
-                <span>info@ahmedfacility.qa</span>
+              <a href="mailto:info@ahmedforfacilityservices.com" className="flex items-center gap-2 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors min-w-0">
+                <Mail size={14} className="text-[#C5A059] flex-shrink-0" />
+                <span className="truncate text-[10px]">info@ahmedforfacilityservices.com</span>
               </a>
             </div>
           </div>
@@ -209,6 +208,21 @@ export default function Footer() {
               <span>{lang === 'en' ? 'Admin Portal' : 'لوحة الإدارة'}</span>
             </a>
           </div>
+        </div>
+
+        {/* Developer Credit */}
+        <div className="pt-4 pb-2 text-center border-t border-white/5 mt-4">
+          <p className="text-[11px] text-[#E8D5B0]/50">
+            {lang === 'en' ? 'Designed & Developed by' : 'تصميم وتطوير بواسطة'}{' '}
+            <a
+              href="https://www.worknestconnect.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#C5A059] hover:text-white hover:underline transition-colors font-semibold"
+            >
+              Worknest Connect
+            </a>
+          </p>
         </div>
 
       </div>

@@ -321,7 +321,7 @@ export default function Contact() {
                 </p>
 
                 <a
-                  href="https://wa.me/97455123456"
+                  href="https://wa.me/97474022250"
                   target="_blank"
                   rel="noreferrer"
                   className="w-full py-2.5 rounded-xl bg-[#25D366] hover:bg-white hover:text-[#075E54] text-white font-bold text-xs text-center shadow-md transition-all flex items-center justify-center gap-2"
@@ -344,7 +344,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <span className="text-[11px] text-[#8A8181] block uppercase">{t.contact.info.phoneLabel}</span>
-                      <a href="tel:+97444556677" className="font-bold text-[#380C1B] hover:text-[#5B132B]">
+                      <a href="tel:+97474022250" className="font-bold text-[#380C1B] hover:text-[#5B132B]">
                         {t.contact.info.phone}
                       </a>
                     </div>
@@ -356,7 +356,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <span className="text-[11px] text-[#8A8181] block uppercase">{t.contact.info.emailLabel}</span>
-                      <a href="mailto:info@ahmedfacility.qa" className="font-bold text-[#380C1B] hover:text-[#5B132B]">
+                      <a href="mailto:info@ahmedforfacilityservices.com" className="font-bold text-[#380C1B] hover:text-[#5B132B]">
                         {t.contact.info.email}
                       </a>
                     </div>
@@ -368,7 +368,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <span className="text-[11px] text-[#8A8181] block uppercase">{t.contact.info.locationLabel}</span>
-                      <p className="font-bold text-[#380C1B]">
+                      <p className="font-bold text-[#380C1B] leading-snug">
                         {t.contact.info.location}
                       </p>
                     </div>
@@ -387,20 +387,31 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* Google Maps Integration (PDF Mandated) */}
+                {/* Google Maps Integration */}
                 <div className="pt-2">
-                  <span className="text-[11px] font-bold text-[#8A8181] uppercase block mb-2">
-                    {lang === 'en' ? 'Map Location — Doha, Qatar' : 'موقعنا على الخريطة — الدوحة'}
-                  </span>
-                  <div className="w-full h-44 rounded-2xl overflow-hidden border border-[#E5DBCE] relative">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[11px] font-bold text-[#8A8181] uppercase block">
+                      {lang === 'en' ? 'Map Location — Royal Plaza Mall, Doha' : 'موقعنا على الخريطة — مجمع رويال بلازا، الدوحة'}
+                    </span>
+                    <a
+                      href="https://maps.google.com/?q=Royal+Plaza+Mall+Al+Sadd+Doha+Qatar"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[11px] font-bold text-[#5B132B] hover:underline"
+                    >
+                      {lang === 'en' ? 'Open in Maps' : 'فتح الخريطة'} ↗
+                    </a>
+                  </div>
+                  <div className="w-full h-52 rounded-2xl overflow-hidden border border-[#E5DBCE] relative shadow-inner">
                     <iframe
-                      title="Ahmed Facility Services Doha Location"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115456.84852932373!2d51.44195655!3d25.286106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x44d9319f78cfd4b1!2sDoha%2C%20Qatar!5e0!3m2!1sen!2sqa!4v1700000000000!5m2!1sen!2sqa"
+                      title="Ahmed for Facility Services - Royal Plaza Mall, Al Sadd, Doha"
+                      src="https://www.google.com/maps/embed?pb=!1m15!1m10!1m3!1d-0.5803998261987697!2d51.501662126078145!3d25.2811764!2m1!1f0!3m2!1i1024!2i768!4f59.39508645882321!3m3!1m2!1s0x3e45dac45380bff1%3A0xb052bcb34fb61413!2sRoyal%20Plaza%20Mall!4v1790774515377"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
                       allowFullScreen=""
                       loading="lazy"
+                      referrerPolicy="strict-origin-when-cross-origin"
                     />
                   </div>
                 </div>

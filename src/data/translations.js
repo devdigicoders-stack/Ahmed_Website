@@ -260,13 +260,13 @@ export const translations = {
         btn: "Chat on WhatsApp"
       },
       info: {
-        phone: "+974 4455 6677",
+        phone: "+974 7402 2250",
         phoneLabel: "Call Us",
-        whatsapp: "+974 5512 3456",
+        whatsapp: "+974 7402 2250",
         whatsappLabel: "WhatsApp Direct",
-        email: "info@ahmedfacility.qa",
+        email: "info@ahmedforfacilityservices.com",
         emailLabel: "Email Inquiries",
-        location: "Grand Hamad Street, Doha, State of Qatar",
+        location: "4th floor, Room No 09, HUB Business Center, Royal Plaza Mall, Al Sadd, Doha, Qatar",
         locationLabel: "Office Location",
         workingHours: "Saturday - Thursday: 8:00 AM - 8:00 PM"
       }
@@ -543,13 +543,13 @@ export const translations = {
         btn: "محادثة عبر واتساب"
       },
       info: {
-        phone: "+974 4455 6677",
+        phone: "+974 7402 2250",
         phoneLabel: "اتصل بنا",
-        whatsapp: "+974 5512 3456",
+        whatsapp: "+974 7402 2250",
         whatsappLabel: "واتساب مباشر",
-        email: "info@ahmedfacility.qa",
+        email: "info@ahmedforfacilityservices.com",
         emailLabel: "البريد الإلكتروني",
-        location: "شارع حمد الكبير، الدوحة، دولة قطر",
+        location: "الطابق الرابع، مكتب رقم 09، مركز هاب للأعمال، مجمع رويال بلازا، السد، الدوحة - قطر",
         locationLabel: "مقر الشركة",
         workingHours: "السبت - الخميس: ٨:٠٠ ص - ٨:٠٠ م"
       }

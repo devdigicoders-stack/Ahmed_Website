@@ -562,7 +562,7 @@ export default function Home() {
                 {t.nav.requestStaff}
               </Link>
               <a
-                href="https://wa.me/97455123456"
+                href="https://wa.me/97474022250"
                 target="_blank"
                 rel="noreferrer"
                 className="px-7 py-3.5 rounded-xl bg-[#25D366] text-white font-bold text-xs sm:text-sm shadow-md hover:bg-[#1ebe5d] transition-all transform hover:-translate-y-1 flex items-center gap-2"

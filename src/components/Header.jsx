@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../assets/Ahmed For Facility Servies Logo.png';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { 
@@ -72,11 +73,11 @@ export default function Header() {
           
           <div className="flex items-center gap-4 text-[11px] flex-shrink-0">
             <a 
-              href="tel:+97444556677" 
+              href="tel:+97474022250" 
               className="hover:text-white flex items-center gap-1.5 transition-colors font-semibold"
             >
               <Phone size={12} className="text-[#C5A059]" />
-              <span>+974 4455 6677</span>
+              <span>+974 7402 2250</span>
             </a>
             <span className="text-[#5B132B] hidden sm:inline">|</span>
             <button
@@ -101,13 +102,15 @@ export default function Header() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
           
           {/* 1. Left: Brand Logo & Title */}
-          <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-[#5B132B] to-[#380C1B] text-[#C5A059] flex items-center justify-center font-bold text-lg sm:text-xl shadow-md border border-[#C5A059]/30 group-hover:scale-105 transition-transform flex-shrink-0">
-              <span className="font-serif">A</span>
-            </div>
+          <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0">
+            <img
+              src={logo}
+              alt="Ahmed for Facility Services Logo"
+              className="w-10 h-10 sm:w-11 sm:h-11 object-contain group-hover:scale-105 transition-transform flex-shrink-0"
+            />
             <div className="flex flex-col">
               <span className="font-extrabold text-base sm:text-lg text-[#380C1B] tracking-tight leading-tight group-hover:text-[#5B132B] transition-colors whitespace-nowrap">
-                {t.brandName}
+                Ahmed for Facility Services
               </span>
               <span className="text-[10px] font-bold tracking-wider text-[#C5A059] uppercase whitespace-nowrap">
                 Facility Services • Qatar

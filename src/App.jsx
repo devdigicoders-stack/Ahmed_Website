@@ -15,7 +15,7 @@ import MonthlyStaffing from './pages/MonthlyStaffing';
 import OurProfessionals from './pages/OurProfessionals';
 import HowItWorks from './pages/HowItWorks';
 import Contact from './pages/Contact';
-import PrivacyPolicy from './pages/PrivacyPolicy';
+import LegalInfo from './pages/LegalInfo';
 import TermsConditions from './pages/TermsConditions';
 
 function AnimatedRoutes() {
@@ -31,7 +31,7 @@ function AnimatedRoutes() {
         <Route path="/our-professionals" element={<OurProfessionals />} />
         <Route path="/how-it-works" element={<HowItWorks />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/privacy-policy" element={<LegalInfo />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         {/* Fallback route */}
         <Route path="*" element={<Home />} />

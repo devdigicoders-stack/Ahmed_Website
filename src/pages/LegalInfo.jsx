@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import PageTransition from '../components/PageTransition';
 import { ShieldCheck, Lock, Eye, FileText, CheckCircle2, ArrowRight } from 'lucide-react';
 
-export default function PrivacyPolicy() {
+export default function LegalInfo() {
   const { lang, isRTL } = useLanguage();
 
   const content = {
@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
           icon: CheckCircle2,
           title: "5. Your Rights & Inquiries",
           paragraphs: [
-            "You have the right to review, update, or request the deletion of your enquiry information from our records at any time. For questions regarding this Privacy Policy, please contact us at info@ahmedfacility.qa or call +974 4455 6677."
+            "You have the right to review, update, or request the deletion of your enquiry information from our records at any time. For questions regarding this Privacy Policy, please contact us at info@ahmedforfacilityservices.com or call +974 7402 2250."
           ]
         }
       ],
@@ -114,7 +114,7 @@ export default function PrivacyPolicy() {
           icon: CheckCircle2,
           title: "٥. حقوقك والاستفسارات",
           paragraphs: [
-            "يحق لك في أي وقت طلب مراجعة بياناتك المسجلة لدينا أو تعديلها أو حذفها. لأي استفسارات تتعلق بسياسة الخصوصية، يسعدنا تواصلكم معنا عبر البريد info@ahmedfacility.qa أو الاتصال على الرقم ٤٤٥٥٦٦٧٧ ٩٧٤+."
+            "يحق لك في أي وقت طلب مراجعة بياناتك المسجلة لدينا أو تعديلها أو حذفها. لأي استفسارات تتعلق بسياسة الخصوصية، يسعدنا تواصلكم معنا عبر البريد info@ahmedforfacilityservices.com أو الاتصال على الرقم ٧٤٠٢٢٢٥٠ ٩٧٤+."
           ]
         }
       ],

@@ -8,7 +8,7 @@ export default function FloatingWhatsApp() {
     ? 'Hello, I would like to inquire about household staffing services in Qatar.' 
     : 'مرحباً، أود الاستفسار عن خدمات التوظيف المنزلي والكوادر في قطر.';
   
-  const whatsappUrl = `https://wa.me/97455123456?text=${encodeURIComponent(defaultText)}`;
+  const whatsappUrl = `https://wa.me/97474022250?text=${encodeURIComponent(defaultText)}`;
 
   return (
     <div className={`hidden md:flex fixed bottom-6 ${isRTL ? 'left-6' : 'right-6'} z-50 items-center group`}>

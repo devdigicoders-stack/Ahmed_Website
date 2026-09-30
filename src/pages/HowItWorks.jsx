@@ -192,7 +192,7 @@ export default function HowItWorks() {
                 <ArrowIcon size={16} />
               </Link>
               <a
-                href="https://wa.me/97455123456"
+                href="https://wa.me/97474022250"
                 target="_blank"
                 rel="noreferrer"
                 className="px-6 py-3 rounded-xl bg-[#25D366] text-white font-bold text-xs sm:text-sm shadow-sm hover:bg-[#1ebe5d] transition-all flex items-center gap-2"
