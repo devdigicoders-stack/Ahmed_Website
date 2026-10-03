@@ -49,7 +49,6 @@ export default function Header() {
       ]
     },
     { name: t.nav.monthlyStaffing, path: '/monthly-staffing' },
-    { name: t.nav.ourProfessionals, path: '/our-professionals' },
     { name: t.nav.howItWorks, path: '/how-it-works' },
     { name: t.nav.contactUs, path: '/contact' },
   ];

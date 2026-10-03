@@ -116,7 +116,7 @@ export default function Home() {
                 {/* CTAs */}
                 <div className="flex flex-wrap items-center gap-4 pt-4">
                   <Link
-                    to="/our-professionals"
+                    to="/monthly-staffing"
                     className="inline-flex items-center gap-2 px-7 py-4 rounded-xl bg-gradient-to-r from-[#5B132B] to-[#7E203E] text-white font-bold text-sm sm:text-base shadow-xl hover:shadow-2xl hover:from-[#380C1B] hover:to-[#5B132B] transition-all transform hover:-translate-y-1"
                   >
                     <span>{t.hero.ctaPrimary}</span>

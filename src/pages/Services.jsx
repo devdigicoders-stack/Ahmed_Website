@@ -169,12 +169,7 @@ export default function Services() {
                         <ArrowIcon size={16} />
                       </Link>
 
-                      <Link
-                        to="/our-professionals"
-                        className="px-6 py-3 rounded-xl bg-white border border-[#D5C7B3] hover:border-[#5B132B] text-[#380C1B] text-xs sm:text-sm font-bold shadow-sm transition-all"
-                      >
-                        {lang === 'en' ? 'View Available Candidates' : 'عرض المرشحين المتاحين'}
-                      </Link>
+
                     </div>
                   </div>
 

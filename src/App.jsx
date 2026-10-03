@@ -12,7 +12,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import MonthlyStaffing from './pages/MonthlyStaffing';
-import OurProfessionals from './pages/OurProfessionals';
 import HowItWorks from './pages/HowItWorks';
 import Contact from './pages/Contact';
 import LegalInfo from './pages/LegalInfo';
@@ -28,7 +27,6 @@ function AnimatedRoutes() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/monthly-staffing" element={<MonthlyStaffing />} />
-        <Route path="/our-professionals" element={<OurProfessionals />} />
         <Route path="/how-it-works" element={<HowItWorks />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<LegalInfo />} />

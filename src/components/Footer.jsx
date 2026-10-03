@@ -151,9 +151,6 @@ export default function Footer() {
                 <Link to="/monthly-staffing" className="hover:text-white transition-colors">{t.nav.monthlyStaffing}</Link>
               </li>
               <li>
-                <Link to="/our-professionals" className="hover:text-white transition-colors">{t.nav.ourProfessionals}</Link>
-              </li>
-              <li>
                 <Link to="/how-it-works" className="hover:text-white transition-colors">{t.nav.howItWorks}</Link>
               </li>
               <li>
